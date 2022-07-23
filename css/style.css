@@ -567,7 +567,7 @@ span {
 
 /* mindfulness page */
 .mindBody{
-  overflow:hidden;
+  overflow:auto
 }
 .container__video {
   border: 0.3rem solid black;
