@@ -576,9 +576,8 @@ span {
 
 .mindfulness-top{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 2rem;
   background: linear-gradient(10deg, #ffffff, #ff9f9f);
-  box-shadow: 1px 1px 2rem rgb(0 0 0 / 30%);
-  /* border-radius: 5rem; */
   padding: 1rem 5rem 1rem 5rem;
 }
 

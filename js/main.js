@@ -18,6 +18,13 @@ function playPause() {
     }
 }
 
+const icon = document.getElementsByClassName('icon')[0]
+const navLinks = document.getElementsByClassName('nav-links')[0]
+
+icon.addEventListener('click', () => {
+  navLinks.classList.toggle('active')
+})
+
 
 // function play() {
 //   audio.play();
@@ -36,9 +43,3 @@ function playPause() {
 //     }
 //   }
 
-// const icon = document.getElementsByClassName('icon')[0]
-// const navLinks = document.getElementsByClassName('nav-links')[0]
-
-// icon.addEventListener('click', () => {
-//   navLinks.classList.toggle('active')
-// })
