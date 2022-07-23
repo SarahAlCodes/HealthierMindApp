@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthyMind</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Fredoka+One&family=Roboto&family=Source+Sans+Pro:wght@300&display=swap"rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="mindBody">
+    <header>
+        <div class="container row">
+            <a href="index.html"><img class="logo" src="../Images/Healthy-Mind-Logo.png"
+                    alt="healthy-mind-logo"></a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="activities.html" class="nav__link">Activities</a></li>
+                    <li class="nav__item"><a href="mindfulness.html" class="nav__link">Mindfulness</a></li>
+                    <!-- <li class="nav__item"><a href="tracker.html" class="nav__link">Mood</a></li> -->
+                    <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="container__video">
+            <div class="wrapper">
+                <video id="video" class="screen">
+                    <source src="/videos/mindfulness-video4.mov" type='video/mp4'/>
+                </video>
+                <div class="controls">
+                    <div class="control__panel">
+                        <button class="backbtn">back</button>
+                        <button class="pauplay"> Pause/Play </button>
+                        <button class="next">Next</button>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar">
+                <img src="#" alt="icon for mindfulness videos" />
+                <img src="#" alt="icon for breathing excercises" />
+                <span><a href="parents__info"><!--icon for parents but we'll make it a modal--> Icon</a></span>
+            </div>
+        </div>
+    </section>
+    <!-- Slider main container -->
+    <!-- <section class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</section> -->
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/mindfulness.js"></script>
+</body>
+
+</html>
