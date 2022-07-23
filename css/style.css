@@ -19,12 +19,14 @@ html {
 /* pause and play btn */
 .fa-circle-play{
   cursor: pointer;
-  color: #FF9F9F;
+  color: #605959;
   padding-left: 1rem;
+  position: fixed;
+  bottom: 20px;
 }
 
-.fa-circle-play{
-  opacity: 0.70;
+.fa-circle-playAudio{
+  opacity: 0.90;
 }
 
 /*scrollbar*/
@@ -71,7 +73,7 @@ html {
   margin-right: 3.5rem;
 }
 
-.icon{
+/* .icon{
   position: absolute;
   top: .75rem;
   right: 1rem;
@@ -80,7 +82,7 @@ html {
   justify-content: space-between;
   width: 30px;
   height: 21px;
-}
+} */
 
 .nav-links {
   height: 100%;
@@ -129,7 +131,7 @@ html {
 }
 
 .hero-top{
-  padding-bottom: 6em;
+  padding-bottom: 7em;
 }
 
 .hero-title {
@@ -457,6 +459,7 @@ span {
 }
 
 .fa-solid {
+  padding-top: 1rem;
   padding-bottom: 1rem;
   font-family: "Font Awesome 6 Free";
   font-size: xx-large;
@@ -573,10 +576,14 @@ span {
 
 .mindfulness-top{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  padding: 0 5rem 0 5rem;
+  background: linear-gradient(10deg, #ffffff, #ff9f9f);
+  box-shadow: 1px 1px 2rem rgb(0 0 0 / 30%);
+  /* border-radius: 5rem; */
+  padding: 1rem 5rem 1rem 5rem;
 }
 
 .mindfulness-h1{
+  color: white;
   text-align: center;
   font-size: 3rem;
   text-decoration: underline;
@@ -838,10 +845,10 @@ span {
 }
 
 .about-header-content > p {
-  text-align: center;
+  text-align: justify;
   padding: 0.5rem;
   color: #9774c3;
-  font-family: 'Caveat Brush';
+  /* font-family: 'Caveat Brush'; */
   font-family: 'Carter One', cursive;
   font-weight: 900;
   font-size: large;
