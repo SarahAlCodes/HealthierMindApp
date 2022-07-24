@@ -459,6 +459,7 @@ span {
 .fa-solid {
   padding-bottom: 1rem;
   font-family: "Font Awesome 6 Free";
+  font-size: xx-large;
 }
 
 /* about page */
@@ -569,6 +570,26 @@ span {
 .mindBody{
   overflow:auto
 }
+
+.mindfulness-top{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 0 5rem 0 5rem;
+}
+
+.mindfulness-h1{
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: underline;
+  
+}
+.mindfulness-p{
+  text-align: justify;
+}
+
+.mindfulness-p + .mindfulness-p{
+  padding-bottom: 2rem;
+}
+
 .container__video {
   border: 0.3rem solid black;
   height: 100vh;
