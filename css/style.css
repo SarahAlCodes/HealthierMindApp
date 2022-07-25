@@ -562,7 +562,7 @@ span {
   gap: 15px;
   align-items: flex-start;
   padding: 1rem 0.4rem;
-
+  background: #ff9f9f;
 }
   
 .mindfulness-top{
@@ -687,11 +687,11 @@ span {
 
 
 .breathing-exercises-section{
-  background: #ff9f9f;
+  background: #9774c3;
 }
 
 .breathing-exercises-header{
-  background: #ff9f9f;
+  background: #9774c3;
   font-family:  'Carter One', cursive;
   color: #fff;
   display: flex;
