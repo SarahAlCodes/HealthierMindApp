@@ -40,7 +40,7 @@ html {
 
 /* home page */
 
-.container {
+.home-container {
   width: 100vw;
   height: 18vh;
   margin: 0 auto;
@@ -49,19 +49,13 @@ html {
   height: 100vh;
 }
 
-/* home page */
-
-/* header{
-  background-color: #d2edfc;
-  height: 10%;
-} */
-
 /* nav bar */
-.row {
+.home-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding-top: 4rem;
 }
 
 .logo {
@@ -71,7 +65,7 @@ html {
   margin-right: 3.5rem;
 }
 
-.icon{
+/* .icon{
   position: absolute;
   top: .75rem;
   right: 1rem;
@@ -80,7 +74,7 @@ html {
   justify-content: space-between;
   width: 30px;
   height: 21px;
-}
+} */
 
 .nav-links {
   height: 100%;
@@ -553,60 +547,81 @@ span {
   text-align: center;
 }
 
-.fa-wind{
-  color: #d3ebfc;
-}
 
-.fa-person-running{
-  color: #d3ebfc;
-}
-
-.fa-face-smile{
-  color: #d3ebfc;
-}
 
 /* mindfulness page */
 .mindBody{
   overflow:auto
 }
-.container__video {
-  border: 0.3rem solid black;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
+
+.container__video{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 15px;
+  align-items: flex-start;
+  padding: 5px 5px;
+}
+
+.container__video .main-video{
+  border-radius: 5px;
+  padding: 10px;
+  background: #9774c3;
+}
+
+.container__video .main-video video{
   width: 100%;
+  border: 5px;
 }
 
-.wrapper {
-  border: 0.3rem solid red;
-  height: 100vh;
+.container__video .sidebar{
+  border-radius: 5px;
+  height: 44.5rem;
+  overflow-y: scroll;
+  background: #9774c3;
+}
+
+.container__video .sidebar::-webkit-scrollbar{
+  width: 7px;
+}
+
+.container__video .sidebar::-webkit-scrollbar-track{
+  border-radius: 50px;
+}
+
+.container__video .sidebar::-webkit-thumb{
+  border: 50px;
+}
+
+.container__video .sidebar .vid video{
   width: 100%;
+  border-radius: 5px;
+
+}
+
+.container__video .sidebar .vid{
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
 }
 
-.screen {
-  border: 0.3rem solid green;
-  width: 100%;
-  height: 100%;
+.container__video .sidebar .vid:hover{
+  background: #ff9f9f;
 }
 
-.sidebar {
-  border: 0.4rem solid yellow;
-  background-color: blue;
-  width: 10%;
-  display: flex;
-  flex-direction: column;
+.container__video .sidebar .vid.active{
+  background:#ff9f9f;
 }
 
-.controls {
-  border: 0.3rem solid purple;
+/* .controls {
   width: 100%;
   height: 40%;
 }
 
 .control__panel {
-  border: 0.3rem solid pink;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -637,9 +652,38 @@ span {
 .next:hover,
 .pauplay:hover {
   background: #f99292;
+} */
+
+/* mindfulness page breathing exercises */
+
+ .breathing-Excercises-Container{
+  margin-top: 5rem;
 }
 
-/* 
+
+.breathing-exercises-section{
+  background: #ff9f9f;
+}
+
+.breathing-exercises-header{
+  background: #ff9f9f;
+  font-family:  'Carter One', cursive;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swiper {
+  width: 50rem;
+}
+
+
+.slide-img{
+  width: inherit;
+}
+
+
 /* ----------- iPhone 6, 6S, 7 and 8 -----------
 
 /* Portrait and Landscape */
@@ -666,7 +710,7 @@ span {
 /* Portrait and Landscape */
 @media only screen 
   and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
+  and (max-device-width: 850px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
 
     .containerImg > img {
@@ -788,6 +832,27 @@ span {
     font-size: 2em;
     }
 
+/* activities page */
+
+.headings-container {
+  display: flex;
+  padding: 3rem;
+  background: linear-gradient(10deg, #9774c3, #ff9f9f);
+  flex-direction: column;
+  align-items: center;
+  border: solid 0px white;
+  box-shadow: 1px 1px 2rem rgb(0 0 0 / 30%);
+}
+
+.headings {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: white;
+  font-family: 'Carter One', cursive;
+  font-size: inherit;
+  text-align: center;
+}
+
 
 /* about page */
 
@@ -828,42 +893,18 @@ span {
   margin: 0 auto;
 }
 
+  }
 
 
-/* nav */
-    
+  @media (max-width:991px) {
+    .container__video{
+      grid-template-columns: 1.5fr 2fr;
+      padding: 10px;
+    }
+  }
 
-.nav {
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.icon{
-  display: flex;
-}
-
-.nav-links {
-  display: none;
-  width: 100%;
-}
-
-.nav__list{
-  width: 100%;
-  flex-direction: column;
-}
-
-.nav__item{
-  text-align: center;
-}
-
-.nav__item a{
-  padding: .5rem 1rem;
-
-}
-
-.nav-links.active {
-  display: flex;
-}
-
-
+  @media (max-width:768px) {
+    .container__video{
+      grid-template-columns: 1fr;
+    }
   }

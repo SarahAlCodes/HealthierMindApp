@@ -1,6 +1,6 @@
 const swiper = new Swiper('.swiper', {
     // Optional parameters
-    direction: 'vertical',
+    direction: 'horizontal',
     loop: true,
   
     // If we need pagination
@@ -13,22 +13,24 @@ const swiper = new Swiper('.swiper', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
   });
+
+
+//Video function
+
+  let sideBar = document.querySelectorAll('.sidebar .vid')
+  let mainVideo = document.querySelector('.main-video video')
   
+  sideBar.forEach(video =>{
+    video.onclick = () => {
+      sideBar.forEach(vid => vid.classList.remove('active'));
+      video.classList.add('active')
+      if(video.classList.contains('active')){
+        let src = video.children[0].getAttribute('src')
+        mainVideo.src = src;
+      }
+    }
+  })
+
+
   
-  //Video Pause play function
-  const video = document.getElementById("video");
-  document.querySelector('.pauplay').addEventListener('click', playPause)
-  function playPause() {
-      if (video.paused === true){
-          video.play();
-        }
-      else{
-          video.pause();
-        }
-  }

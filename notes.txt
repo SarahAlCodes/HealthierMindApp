@@ -1,0 +1,1 @@
+-Alt and aria labels for each image/video
