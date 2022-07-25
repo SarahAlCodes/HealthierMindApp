@@ -19,12 +19,14 @@ html {
 /* pause and play btn */
 .fa-circle-play{
   cursor: pointer;
-  color: #FF9F9F;
+  color: #605959;
   padding-left: 1rem;
+  position: fixed;
+  bottom: 20px;
 }
 
-.fa-circle-play{
-  opacity: 0.70;
+.fa-circle-playAudio{
+  opacity: 0.90;
 }
 
 /*scrollbar*/
@@ -55,7 +57,7 @@ html {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-top: 4rem;
+  height: fit-content;
 }
 
 .logo {
@@ -123,7 +125,7 @@ html {
 }
 
 .hero-top{
-  padding-bottom: 6em;
+  padding-bottom: 7em;
 }
 
 .hero-title {
@@ -229,9 +231,7 @@ html {
 }
 
 .mindfulness-p{
-  display: flex;
   flex-direction: column;
-  align-items: flex-start;
 }
 
 .mindfulness-p > p{
@@ -452,7 +452,9 @@ span {
 
 .fa-solid {
   padding-top: 1rem;
+  padding-bottom: 1rem;
   font-family: "Font Awesome 6 Free";
+  font-size: xx-large;
 }
 
 /* about page */
@@ -559,7 +561,30 @@ span {
   grid-template-columns: 2fr 1fr;
   gap: 15px;
   align-items: flex-start;
-  padding: 5px 5px;
+  padding: 1rem 0.4rem;
+
+}
+  
+.mindfulness-top{
+  font-family: 'Carter One', cursive;
+  background: linear-gradient(10deg, #9774c3, #ff9f9f);
+  padding: 1rem 5rem 1rem 5rem;
+  color: #fff;
+}
+
+.mindfulness-h1{
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: underline;
+  
+}
+.mindfulness-page-p{
+  text-align: center;
+}
+
+.mindfulness-p + .mindfulness-p{
+  padding-bottom: 2rem;
 }
 
 .container__video .main-video{
@@ -882,10 +907,10 @@ span {
 }
 
 .about-header-content > p {
-  text-align: center;
+  text-align: justify;
   padding: 0.5rem;
   color: #9774c3;
-  font-family: 'Caveat Brush';
+  /* font-family: 'Caveat Brush'; */
   font-family: 'Carter One', cursive;
   font-weight: 900;
   font-size: large;

@@ -29,18 +29,19 @@ This is a mindfulness-based app that takes kids ages 8-12 on an interactive jour
 Creating this mindfulness web application allowed us to push our coding skills and creativity. Targeting a young age group, our focus was on accessibility and practicality. We would often ask ourselves "Would an 8 year old enjoy this feature"? Our team built a mindfulness page similar to Youtube's structure, with control mechanisms to switch through the videos, and a sidebar to select similar videos that can then pop up on the screen. This project taught us how essential it is to make out applications as web accessibile and inclusive as possible. 
 
 ## Optimizations:
+  - User authentication
+  - Adding a mood tracker feature
+  - Adding a journal entry feature
+  - Enhancing media queries
+  - Adding more meditation videos 
+  - Ability to switch through audio sounds
 
 ## Installation
 ```
 npm install
 ```
-
-## Dependencies
 ```
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.1",
-    "ejs": "^3.1.8",
-    "express": "^4.18.1"
+git lfs install
 ```
 
 ## Usage
