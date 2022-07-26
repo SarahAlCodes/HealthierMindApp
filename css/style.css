@@ -9,6 +9,7 @@ body {
   max-width: 100%;
   font-size: 1.3rem;
   background-color: #d2edfc;
+  /* background: linear-gradient(10deg, #9774c3, #ff9f9f); */
 }
 html {
   scroll-behavior: smooth;
@@ -16,7 +17,7 @@ html {
 }
 
 
-/* pause and play btn */
+/* Background audio pause and play btn */
 .fa-circle-play{
   cursor: pointer;
   color: #605959;
@@ -29,6 +30,37 @@ html {
   opacity: 0.90;
 }
 
+.tooltiptext {
+  visibility: hidden;
+  width: max-content;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  font-size: initial;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 6px;
+  left: 117%;
+  padding: 1rem;
+}
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+
+.fa-circle-play:hover .tooltiptext {
+  visibility: visible;
+}
+
 /*scrollbar*/
 ::-webkit-scrollbar {
   width: 0.7em;
@@ -37,7 +69,7 @@ html {
   background: antiquewhite;
 }
 ::-webkit-scrollbar-thumb {
-  background: #ffe170;
+  background: #aaa;
 }
 
 /* home page */
@@ -64,7 +96,7 @@ html {
 .logo {
   width: 4em;
   /* height: 3em; */
-  margin: 1rem;
+ margin: .3rem;
  margin-left: 1.5rem; 
 }
 
@@ -78,10 +110,10 @@ html {
 .nav__link{
   text-decoration: none;
   color: #FF9F9F;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Carter One', cursive;
   font-weight: bold;
-  padding: 1rem;
   padding-right: 2rem;
+  padding-bottom: inherit;
   display: block;
 }
 
@@ -112,7 +144,6 @@ html {
 
 .hero {
   background-color: #d2edfc;
-  /* padding-bottom: 5em; */
 }
 
 .hero-top{
@@ -138,7 +169,6 @@ html {
 .activities-content{
   background: #9774c3;
   border-top: solid 5px #ffe070;
-  /* padding: 1rem; */
   padding: 1em 3em 1em 3em;
   font-family: 'Carter One', cursive;
 
@@ -498,7 +528,7 @@ span {
 }
 
 .services{
-  background: #9774c3;
+  background: linear-gradient(10deg, #9774c3, #ff9f9f);
   padding-top: 2rem;
 }
 
@@ -514,14 +544,14 @@ span {
   margin: auto;
   font-family: 'Caveat Brush';
   font-size: xxx-large;
-  color: #d3ebfc;
+  color: #fff;
 }
 
 .services-about{
   display: flex;
   margin: inherit;
   padding-top: 2rem;
-  color: white;
+  color: #fff;
   align-items: center;
   flex-direction: column;
 }
@@ -531,7 +561,7 @@ span {
   flex-direction: column;
   align-items: center;
   width: 50%;  
-  color: #d3ebfc;
+  color: #fff;
   font-family: 'Carter One', cursive;
   font-size: larger;
 }
@@ -589,9 +619,15 @@ span {
   border: 5px;
 }
 
+.container__video .main-video .video-title{
+  color: black;
+  font-size: inherit;
+  font-family: 'Carter One', cursive;
+}
+
 .container__video .sidebar{
   border-radius: 5px;
-  height: 44.5rem;
+  height: 49rem;
   overflow-y: scroll;
   background: #9774c3;
 }
@@ -609,7 +645,7 @@ span {
 }
 
 .container__video .sidebar .vid video{
-  width: 100%;
+  width: 10rem;
   border-radius: 5px;
 
 }
@@ -632,7 +668,12 @@ span {
   background:#ff9f9f;
 }
 
-/* mindfulness page breathing exercises */
+.container__video .sidebar .vid .video-title{
+  font-size: 17px;
+  font-family: 'Carter One', cursive;
+}
+
+/* mindfulness page breathing exercises slides */
 
  .breathing-Excercises-Container{
   margin-top: 5rem;
@@ -831,6 +872,42 @@ span {
   text-align: center;
 }
 
+/* mindfulness page */
+.breathing-exercises-header{
+  font-size: small;
+  text-align: -webkit-center;
+}
+
+.mindfulness-top {
+  font-family: 'Carter One', cursive;
+  background: linear-gradient(10deg, #9774c3, #ff9f9f);
+  padding: 1rem;
+  color: #fff;
+}
+
+.mindfulness-page-p {
+  text-align: center;
+  font-size: smaller;
+}
+
+
+.mindfulness-h1 {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: underline;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swiper {
+  width: auto;
+}
+
+.slide-img {
+  width: inherit;
+}
 
 /* about page */
 
@@ -863,7 +940,6 @@ span {
   text-align: justify;
   padding: 0.5rem;
   color: #9774c3;
-  /* font-family: 'Caveat Brush'; */
   font-family: 'Carter One', cursive;
   font-weight: 900;
   font-size: large;

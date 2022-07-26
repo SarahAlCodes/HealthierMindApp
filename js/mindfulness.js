@@ -20,6 +20,7 @@ const swiper = new Swiper('.swiper', {
 
   let sideBar = document.querySelectorAll('.sidebar .vid')
   let mainVideo = document.querySelector('.main-video video')
+  let videoTitle = document.querySelector('.main-video .video-title')
   
   sideBar.forEach(video =>{
     video.onclick = () => {
@@ -28,6 +29,8 @@ const swiper = new Swiper('.swiper', {
       if(video.classList.contains('active')){
         let src = video.children[0].getAttribute('src')
         mainVideo.src = src;
+        let text = video.children[1].innerHTML
+        videoTitle.innerHTML = text;
       }
     }
   })
