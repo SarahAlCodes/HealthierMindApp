@@ -23,6 +23,7 @@ html {
   padding-left: 1rem;
   position: fixed;
   bottom: 20px;
+  z-index: 1;
 }
 
 .fa-circle-playAudio{
@@ -34,22 +35,22 @@ html {
   width: 0.7em;
 }
 ::-webkit-scrollbar-track {
-  background: antiquewhite;
+  background: rgb(255, 255, 255);
 }
 ::-webkit-scrollbar-thumb {
-  background: #ffe170;
+  background: #dfdfdf;
 }
 
 /* home page */
 
 .home-container {
   width: 100vw;
-  height: 18vh;
+  /* height: 18vh; */
   margin: 0 auto;
 }
-.main {
+/* .main {
   height: 100vh;
-}
+} */
 
 
 /* nav bar */
@@ -65,7 +66,7 @@ html {
   width: 4em;
   /* height: 3em; */
   margin: 1rem;
- margin-left: 1.5rem; 
+  margin-left: 1.5rem; 
 }
 
 .nav__list{
@@ -123,6 +124,13 @@ html {
  margin-bottom: 0;
 }
 
+.hero-p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
 
 /* activities section on home page */
 
@@ -178,7 +186,7 @@ html {
   line-height: 2.5rem;
   color: #fff;
   padding: inherit;
-  font-family: 'Carter One', cursive;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: larger;
 }
 
@@ -230,7 +238,7 @@ html {
   line-height: 2.5rem;
   color: #fff;
   padding: inherit;
-  font-family: 'Carter One', cursive;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: larger;
 }
 
@@ -253,7 +261,7 @@ html {
 
 /* tracker section on home page */
 
-.tracker-h2{
+/* .tracker-h2{
   display: flex;
   justify-content: flex-end;
   font-family: caveat brush;
@@ -265,20 +273,18 @@ html {
 .tracker-content{
   background: #9774c3;
   border-top: solid 5px #ffe070;
-  /* padding: 1rem; */
   padding:  1em 3em 1em 3em;
-}
+} */
 
 .containerImg > img {
   width: 80%;
-  margin: 6rem 5rem 5rem 5rem ;
+  margin: 8rem 5rem 5rem 5rem ;
   max-height: 100%;
   padding: auto;
   box-shadow: 1px 1px 2rem rgb(0 0 0 / 30%);
 }
 
 .container {
-  /* width: 90vw; */
   margin: 0 auto;
 }
 
@@ -468,8 +474,8 @@ span {
     padding: 0 11rem 1rem 11rem;
     line-height: 3rem;
     color: #9774c3;
-    font-family: 'Carter One', cursive;
-    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
     font-size: xx-large;
 }
 
@@ -559,24 +565,31 @@ span {
 .mindfulness-top{
   font-family: 'Carter One', cursive;
   background: linear-gradient(10deg, #9774c3, #ff9f9f);
-  padding: 1rem 5rem 1rem 5rem;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  margin: 2rem 7rem 2rem 7rem;
+  padding: 0 2rem 0.5rem 3rem;
 }
 
 .mindfulness-h1{
   color: white;
   text-align: center;
   font-size: 3rem;
-  text-decoration: underline;
-  
+  /* text-decoration: underline; */
+  margin-bottom: 0.25rem;
 }
 .mindfulness-page-p{
+  line-height: 1.75rem;
   text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.mindfulness-p + .mindfulness-p{
-  padding-bottom: 2rem;
-}
+/* .mindfulness-p + .mindfulness-p{
+  padding-bottom: 1rem;
+} */
 
 .container__video .main-video{
   border-radius: 5px;
@@ -678,11 +691,12 @@ span {
 
 
 .breathing-exercises-section{
-  background: #9774c3;
+  background: #ad99c6;
+  padding-bottom: 4rem;
 }
 
 .breathing-exercises-header{
-  background: #9774c3;
+  /* background: #9774c3; */
   font-family:  'Carter One', cursive;
   color: #fff;
   display: flex;
@@ -729,34 +743,33 @@ span {
   and (max-device-width: 850px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
 
-    .containerImg > img {
-      width: 80%;
-      display: flex;
-      margin: auto;
-      padding: auto;
-      box-shadow: 1px 1px 2rem rgb(0 0 0 / 30%);
-    }
 
     .hero-top{
       display: flex;
       flex-direction: column-reverse;
-      align-items: center;    
+      align-items: center;  
     }
 
     .hero h1 {
       font-family: caveat brush;
       padding: 1rem;
       font-size: 3em;
-  }
+    }
+    .containerImg > img {
+      width: 80%;
+      display: flex;
+      margin: auto;
+      padding: auto;
+      /* border: black 1px solid; */
+      box-shadow: 1px 1px 2rem rgb(0 0 0 / 30%);
+    }
 
-  .hero__text {
+    .hero__text {
     width: 80%;
     margin: 0 auto;
     padding: unset;
-}
+   }
   
-
-
 
     .activities-content{
       background: #9774c3;

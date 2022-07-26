@@ -41,8 +41,10 @@ Creating this mindfulness web application allowed us to push our coding skills a
 npm install
 ```
 ```
+npm install swiper
+```
+```
 git lfs install
 ```
-
 ## Usage
 This a mobile responsive web application that can be used on numerous devices. Our goal was to make this website as accessible as possible to all users, by using Web Speech API that enables speech recognition and speech synthesis. 
