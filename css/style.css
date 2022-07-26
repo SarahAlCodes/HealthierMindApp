@@ -51,69 +51,60 @@ html {
   height: 100vh;
 }
 
+
 /* nav bar */
-.home-row {
+.nav {
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  height: fit-content;
+  /* background-color: white; */
 }
 
 .logo {
-  width: 3em;
-  height: 3em;
-  margin-left: 2.5rem;
-  margin-right: 3.5rem;
+  width: 4em;
+  /* height: 3em; */
+  margin: 1rem;
+ margin-left: 1.5rem; 
 }
 
-/* .icon{
-  position: absolute;
-  top: .75rem;
+.nav__list{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.nav__link{
+  text-decoration: none;
+  color: #FF9F9F;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  padding: 1rem;
+  padding-right: 2rem;
+  display: block;
+}
+
+.nav__link:hover {
+  opacity: 0.75;
+}
+
+.toggle-button{
+  position: fixed;
+  top: 2rem;
   right: 1rem;
   display: none;
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
-  height: 21px;
-} */
-
-.nav-links {
-  height: 100%;
+  height: 20px;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 100%;
-}
-
-.nav__list {
-  margin: 0;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  font-size: 2rem;
-}
-
-.nav__item {
-  display: flex;
-  flex-direction: row;
-  padding: 0.8rem;
-  padding-right: 3rem;
-  /* padding-right: 9rem; */
-}
-
-.nav__link {
-  text-decoration: none;
-  font-size: initial;
-  font-family: 'Carter One', cursive;
-  color: #FF9F9F;
-  font-weight: bold;
-}
-.nav__link:hover {
-  opacity: 0.75;
+.toggle-button .bar{
+  width: 100%;
+  height: 3px; 
+  background-color: black;
+  border-radius: 10px;
 }
 
 
@@ -880,6 +871,46 @@ span {
   margin: 0 auto;
 }
 
+/* nav */
+
+.toggle-button{
+  display: flex;
+}
+
+.nav-links{
+  display: none;
+  width: 100%;
+}
+
+.nav {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.nav__list{
+  width: 100%;
+  flex-direction: column;
+}
+
+.nav__item{
+  font-size: 1rem;
+  text-align: center;
+}
+
+.nav__link{
+  padding: 0.5rem
+}
+
+.nav__item:hover{
+  background-color: #a3cbe8;
+}
+
+.nav-links.active{
+  display: flex;
+}
+
+
+
   }
 
 
@@ -895,3 +926,6 @@ span {
       grid-template-columns: 1fr;
     }
   }
+
+
+
