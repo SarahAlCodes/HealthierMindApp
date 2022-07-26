@@ -641,44 +641,6 @@ span {
   background:#ff9f9f;
 }
 
-/* .controls {
-  width: 100%;
-  height: 40%;
-}
-
-.control__panel {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  gap: 2rem;
-  padding: 0.5rem 0 2rem 0;
-}
-
-.backbtn,
-.next,
-.pauplay {
-  background: none;
-  border-radius: 1rem;
-  padding: 0.7rem 1rem;
-  font-family: caveat brush;
-  text-transform: uppercase;
-  background: #ff9f9f;
-  color: #fff;
-  font-size: medium;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  box-shadow: 0.3rem 0.3rem 2rem rgb(0 0 0 / 30%);
-}
-
-.back:hover,
-.next:hover,
-.pauplay:hover {
-  background: #f99292;
-} */
-
 /* mindfulness page breathing exercises */
 
  .breathing-Excercises-Container{
