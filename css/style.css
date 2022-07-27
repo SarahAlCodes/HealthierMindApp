@@ -261,6 +261,7 @@ html {
 
 .mindfulness-p{
   flex-direction: column;
+  text-align: justify;
 }
 
 .mindfulness-p > p{
