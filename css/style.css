@@ -627,7 +627,7 @@ span {
   background: #9774c3;
 }
 
-.container__video .main-video video{
+.container__video .main-video iframe{
   width: 100%;
   border: 5px;
 }
@@ -640,7 +640,7 @@ span {
 
 .container__video .sidebar{
   border-radius: 5px;
-  height: 49rem;
+  height: 41.4rem;
   overflow-y: scroll;
   background: #9774c3;
 }
@@ -657,7 +657,7 @@ span {
   border: 50px;
 }
 
-.container__video .sidebar .vid video{
+.container__video .sidebar .vid iframe{
   width: 10rem;
   border-radius: 5px;
 
