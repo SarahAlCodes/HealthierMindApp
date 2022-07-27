@@ -715,33 +715,10 @@ span {
 /* ----------- iPhone 6, 6S, 7 and 8 -----------
 
 /* Portrait and Landscape */
-/* @media only screen 
+ @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
-
-}
-
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-
-/* Portrait and Landscape 
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-
-}   */
-
-
-/* ----------- iPhone X ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 850px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-
-
     .hero-top{
       display: flex;
       flex-direction: column-reverse;
@@ -754,6 +731,7 @@ span {
       font-size: 3em;
     }
     .containerImg > img {
+      margin-top: 1rem;
       width: 80%;
       display: flex;
       margin: auto;
@@ -889,8 +867,18 @@ span {
 .mindfulness-top {
   font-family: 'Carter One', cursive;
   background: linear-gradient(10deg, #9774c3, #ff9f9f);
-  padding: 1rem;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  margin: 2rem 1rem 2rem 1rem;
+  padding: 1rem;
+}
+
+.mindfulness-h1 {
+  margin-bottom: 0.25rem;
+  margin-top: auto;
 }
 
 .mindfulness-page-p {
@@ -929,7 +917,7 @@ span {
   align-items: center;
   padding: 1rem;
   width: fit-content;
-  color: #d3ebfc;
+  color: #fff;
   font-family: 'Carter One', cursive;
   font-size: larger;
 }
@@ -946,7 +934,7 @@ span {
 
 .about-header-content > p {
   text-align: justify;
-  padding: 0.5rem;
+  padding: 1rem;
   color: #9774c3;
   font-family: 'Carter One', cursive;
   font-weight: 900;
@@ -969,6 +957,308 @@ span {
 .nav {
   flex-direction: column;
   align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.nav__list{
+  width: 100%;
+  flex-direction: column;
+}
+
+.nav__item{
+  font-size: 1rem;
+  text-align: center;
+}
+
+.nav__link{
+  padding: 0.5rem
+}
+
+.nav__item:hover{
+  background-color: #a3cbe8;
+}
+
+.nav-links.active{
+  display: flex;
+}
+
+
+
+  }
+
+
+  @media (max-width:991px) {
+    .container__video{
+      grid-template-columns: 1.5fr 2fr;
+      padding: 10px;
+    }
+  }
+
+  @media (max-width:768px) {
+    .container__video{
+      grid-template-columns: 1fr;
+    }
+  }
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape 
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}   */
+
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 850px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+
+    .hero-top{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;  
+    }
+
+    .hero h1 {
+      font-family: caveat brush;
+      padding: 1rem;
+      font-size: 3em;
+    }
+    .containerImg > img {
+      margin-top: 1rem;
+      width: 80%;
+      display: flex;
+      margin: auto;
+      padding: auto;
+      /* border: black 1px solid; */
+      box-shadow: 1px 1px 2rem rgb(0 0 0 / 30%);
+    }
+
+    .hero__text {
+    width: 80%;
+    margin: 0 auto;
+    padding: unset;
+   }
+  
+
+    .activities-content{
+      background: #9774c3;
+      border-top: solid 5px #ffe070;
+      padding: 1rem;
+      display: block;
+    }
+
+    .content-container{
+      display: block;
+      align-items: center;
+    }
+
+    .content-section{
+      display: flex;
+      align-items: center;
+    }
+
+
+    .content-section > p {
+      text-align: center;
+      line-height: 3rem;
+      width: auto;
+      padding-bottom: 1rem;
+      color: #fff;
+      margin: auto;
+      font-family: 'Caveat Brush';
+      font-size: larger;
+    }
+
+    .hero-bottom img{
+      height: 11em;
+      display: block;
+      margin: auto;
+    }
+
+    .activities-h2{
+      display: flex;
+      justify-content: center;
+      font-family: caveat brush;
+      color: #fff;
+      font-size: 2em;
+      margin: inherit;
+    }
+
+    .mindfulness-content-container{
+      display: block;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+
+    .mindfulness-content{
+      background: #ff9f9f;
+      border-top: solid 5px #ffe070;
+      padding: 1rem;
+      display: block;
+    }
+
+    .mindfulness-h2{
+      display: flex;
+      justify-content: center;
+      font-family: caveat brush;
+      color: #fff;
+      font-size: 2em;
+      margin: inherit;
+    }
+
+    .mindfulness-p{
+      text-align: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mindfulness-p > p {
+      width: auto;
+      line-height: 3rem;
+      color: #fff;
+      font-family: 'Caveat Brush';
+      font-size: larger;
+    }
+
+    .tracker-h2{
+    display: flex;
+    justify-content: center;
+    font-family: caveat brush;
+    color: #fff;
+    font-size: 2em;
+    }
+
+/* activities page */
+
+.headings-container {
+  display: flex;
+  padding: 3rem;
+  background: linear-gradient(10deg, #9774c3, #ff9f9f);
+  flex-direction: column;
+  align-items: center;
+  border: solid 0px white;
+  box-shadow: 1px 1px 2rem rgb(0 0 0 / 30%);
+}
+
+.headings {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: white;
+  font-family: 'Carter One', cursive;
+  font-size: inherit;
+  text-align: center;
+}
+
+/* mindfulness page */
+.breathing-exercises-header{
+  font-size: small;
+  text-align: -webkit-center;
+}
+
+.mindfulness-top {
+  font-family: 'Carter One', cursive;
+  background: linear-gradient(10deg, #9774c3, #ff9f9f);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  margin: 2rem 1rem 2rem 1rem;
+  padding: 1rem;
+}
+
+.mindfulness-h1 {
+  margin-bottom: 0.25rem;
+  margin-top: auto;
+}
+
+.mindfulness-page-p {
+  text-align: center;
+  font-size: smaller;
+}
+
+
+.mindfulness-h1 {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: underline;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swiper {
+  width: auto;
+}
+
+.slide-img {
+  width: inherit;
+}
+
+/* about page */
+
+.services-container{
+  flex-direction: column;
+}
+
+.services-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: fit-content;
+  color: #fff;
+  font-family: 'Carter One', cursive;
+  font-size: larger;
+}
+
+.services-info > h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: larger;
+}
+
+.services-info > p {
+  font-size: larger;
+}
+
+.about-header-content > p {
+  text-align: justify;
+  padding: 1rem;
+  color: #9774c3;
+  font-family: 'Carter One', cursive;
+  font-weight: 900;
+  font-size: large;
+  line-height: 2rem;
+  margin: 0 auto;
+}
+
+/* nav */
+
+.toggle-button{
+  display: flex;
+}
+
+.nav-links{
+  display: none;
+  width: 100%;
+}
+
+.nav {
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1rem;
 }
 
 .nav__list{
