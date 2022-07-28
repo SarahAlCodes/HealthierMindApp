@@ -37,7 +37,7 @@ html {
   background-color: black;
   color: #fff;
   text-align: center;
-  font-size: initial;
+  font-size: small;
   border-radius: 6px;
   padding: 5px 0;
   position: absolute;
@@ -511,7 +511,7 @@ span {
 }
 
 .about-title{
-  color: rgb(224, 178, 178);
+  color: black;
   display: flex;
   margin: 0px auto;
   padding-top: 2rem;
