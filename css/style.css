@@ -80,9 +80,6 @@ html {
   /* height: 18vh; */
   margin: 0 auto;
 }
-/* .main {
-  height: 100vh;
-} */
 
 
 /* nav bar */
@@ -96,9 +93,8 @@ html {
 
 .logo {
   width: 4em;
-  /* height: 3em; */
- margin: .3rem;
- margin-left: 1.5rem; 
+  margin: .3rem;
+  margin-left: 1.5rem; 
 }
 
 .nav__list{
@@ -179,7 +175,6 @@ html {
   border-top: solid 5px #ffe070;
   padding: 1em 3em 1em 3em;
   font-family: 'Carter One', cursive;
-
 }
 
 .content-container{
@@ -502,11 +497,11 @@ span {
 
 .about-header-content > p {
   text-align: center;
-    padding: 0 11rem 1rem 11rem;
+    padding: 0 8rem 1rem 8rem;
     line-height: 3rem;
     color: #9774c3;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: xx-large;
 }
 
@@ -516,9 +511,10 @@ span {
 }
 
 .about-title{
+  color: rgb(241, 213, 213);
   display: flex;
   margin: 0px auto;
-  padding-top: 1rem;
+  padding-top: 2rem;
   font-family: "caveat brush";
   font-size: 3em;
   justify-content: center;
@@ -541,6 +537,7 @@ span {
 
 .services-container{
   display: flex;
+  max-width: 100%;
   padding-bottom: 2rem;
 }
 
@@ -550,8 +547,8 @@ span {
   padding-top: 1rem;
   margin: auto;
   font-family: 'Caveat Brush';
-  font-size: xxx-large;
-  color: #fff;
+  font-size: 3rem;
+  color: rgb(241, 213, 213);
 }
 
 .services-about{
@@ -618,9 +615,6 @@ span {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* .mindfulness-p + .mindfulness-p{
-  padding-bottom: 1rem;
-} */
 
 .container__video .main-video{
   border-radius: 5px;
@@ -737,7 +731,6 @@ span {
       display: flex;
       margin: auto;
       padding: auto;
-      /* border: black 1px solid; */
       box-shadow: 1px 1px 2rem rgb(0 0 0 / 30%);
     }
 
@@ -1022,6 +1015,7 @@ span {
 
 
     .hero-top{
+      padding-top: 2rem;
       display: flex;
       flex-direction: column-reverse;
       align-items: center;  
@@ -1038,7 +1032,6 @@ span {
       display: flex;
       margin: auto;
       padding: auto;
-      /* border: black 1px solid; */
       box-shadow: 1px 1px 2rem rgb(0 0 0 / 30%);
     }
 
@@ -1065,7 +1058,6 @@ span {
       display: flex;
       align-items: center;
     }
-
 
     .content-section > p {
       text-align: center;
@@ -1116,6 +1108,10 @@ span {
       margin: inherit;
     }
 
+    .container__video {
+      margin: 1rem;
+    }
+
     .mindfulness-p{
       text-align: center;
       align-items: center;
@@ -1131,13 +1127,6 @@ span {
       font-size: larger;
     }
 
-    .tracker-h2{
-    display: flex;
-    justify-content: center;
-    font-family: caveat brush;
-    color: #fff;
-    font-size: 2em;
-    }
 
 /* activities page */
 
@@ -1160,11 +1149,17 @@ span {
   text-align: center;
 }
 
-/* mindfulness page */
-.breathing-exercises-header{
-  font-size: small;
-  text-align: -webkit-center;
+.number_five_card {
+  padding-top: 3rem;
 }
+
+.number_five_card_p{
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+
+/* mindfulness page */
 
 .mindfulness-top {
   font-family: 'Carter One', cursive;
@@ -1178,10 +1173,6 @@ span {
   padding: 1rem;
 }
 
-.mindfulness-h1 {
-  margin-bottom: 0.25rem;
-  margin-top: auto;
-}
 
 .mindfulness-page-p {
   text-align: center;
@@ -1190,6 +1181,8 @@ span {
 
 
 .mindfulness-h1 {
+  margin-bottom: 0.25rem;
+  margin-top: auto;
   color: white;
   text-align: center;
   font-size: 3rem;
@@ -1199,8 +1192,14 @@ span {
   align-items: center;
 }
 
+.breathing-exercises-header{
+  font-size: small;
+  text-align: -webkit-center;
+}
+
 .swiper {
   width: auto;
+  margin: 1rem;
 }
 
 .slide-img {
@@ -1208,6 +1207,26 @@ span {
 }
 
 /* about page */
+
+.about-title{
+  text-align: center;
+  font-size: 2.7rem;
+}
+
+.about_p {
+  padding: 1rem;
+}
+
+.about-header-content > p {
+  text-align: justify;
+  padding: 1.5rem;
+  color: #9774c3;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 400;
+  font-size: large;
+  line-height: 1.5rem;
+  margin: 0 auto;
+}
 
 .services-container{
   flex-direction: column;
@@ -1218,6 +1237,7 @@ span {
   flex-direction: column;
   align-items: center;
   padding: 1rem;
+  padding-top: 0;
   width: fit-content;
   color: #fff;
   font-family: 'Carter One', cursive;
@@ -1234,16 +1254,6 @@ span {
   font-size: larger;
 }
 
-.about-header-content > p {
-  text-align: justify;
-  padding: 1rem;
-  color: #9774c3;
-  font-family: 'Carter One', cursive;
-  font-weight: 900;
-  font-size: large;
-  line-height: 2rem;
-  margin: 0 auto;
-}
 
 /* nav */
 
