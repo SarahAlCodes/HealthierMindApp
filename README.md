@@ -7,7 +7,6 @@ This is a mindfulness-based app that takes kids ages 8-12 on an interactive jour
   - [How It's Made:](#how-its-made)
   - [Lessons Learned:](#lessons-learned)
   - [Installation](#installation)
-  - [Dependencies](#dependencies)
   - [Usage](#usage)
 
 <p align="center">
